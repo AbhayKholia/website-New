@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+               margin: 0%;
+               padding: 0%;
+           }
+           #navbar1{
+               height: 50px;
+               width: 100%;
+               background-color: rgb(199, 78, 78);
+               color: aliceblue;
+               display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                font-size: 15px;
+                
+             }
+             #paraA{
+                 margin-left: 170px;
+                 margin-top: 20px;
+             }
+             #paraC{
+             margin-left: 150px;
+             margin-top: 20px;
+             }
+   
+            #paraD{
+               margin-right: 270px;
+               margin-top: 20px;
+           }
+          
+           #paraB{
+               margin-top: 20px;
+               padding-left: 60px;
+           }
+            
+            #DABBA{
+               height: 60px;
+               width: 100%;
+               background-color: rgb(236, 241, 246);
+               display: flex;
+               justify-content: right;
+            }
+           .rig{
+               margin-right: 20px;
+               margin-top: 20px;
+               color: rgb(119, 114, 114);
+           }
+           
+       
+       #box1{
+            height: 60px;
+            width: 100%;
+            border: 1px solid rgb(186, 181, 181);
+            border-color: darkgray;
+            display: flex;
+           
+   
+       }
+       #img1{
+           /* height: auto;
+           width: auto; */
+           padding: 20px;
+   
+           border: 1px solid rgb(167, 166, 166);
+           /* margin-left: 30px; */
+       }
+       #img2{
+           /* height: auto;
+           width: auto; */
+           padding: 20px;
+           border: 1px solid rgb(167, 166, 166);;
+       }
+      .bar{
+        height: 40px;
+        width: 25%;
+        border: 1px solid black ;
+        margin-left:400px;
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+      .srch{
+       color: rgb(121, 143, 191);
+       margin-left: 10px;
+       margin-top: 10px;
+      }
+      #search{
+   height: 18px;
+   width: 18px;
+   margin-top: -35px;
+   margin-left: 270px;
+   color: darkgray;
+   margin-right: 250px;
+   }
+   .cart{
+       margin-left: 330px;
+      font-size: 30px;
+      margin-top: -10px;
+   }
+   
+   
+               div>h3{
+                   font-size: 25px;
+                   margin-left: 40px;
+                   
+               }
+               #box2{
+                 display: grid;
+                 grid-template-columns:repeat(6,200px);
+                 grid-template-rows: repeat( 1,250px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 margin-left: 70px;
+               }
+               #box2>div{
+                margin: auto;
+                margin-top: 10px;
+                width: 100%;
+                margin-left: 50px;
+               }
+                #box2>div>img{
+                width: 100%;
+                height: 300px
+               }
+               p{
+                   font-size: 12px;
+                   /* margin-top: px; */
+                   color: rgb(80, 78, 78);
+               }
+               #box3{
+                 display: grid;
+                 grid-template-columns:repeat(6,200px);
+                 grid-template-rows: repeat( 1,250px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 margin-left: 70px;
+               }
+               #box3>div{
+                margin: auto;
+                /* margin-top: 10px; */
+                width: 100%;
+                margin-left: 50px;
+               }
+                #box3>div>img{
+                width: 100%;
+                height: 300px;
+                cursor: pointer;
+   
+                
+                }
+               p{
+                   font-size: 12px;
+                   /* margin-top: px; */
+                   color: rgb(80, 78, 78);
+               }
+               .trend{
+                   margin-top:12%;
+                   /* margin-left: 50px; */
+   
+               }
+               .more{
+                   text-align: center;
+                   margin-top: 15%;
+       
+               }
+               #box4{
+                   display: grid;
+                 grid-template-columns:repeat(3,300px);
+                 grid-template-rows: repeat( 1,100px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 /* left: 10px?; */
+                 /* margin-left: 30px; */
+               }
+               #box4>div{
+                margin: auto;
+                /* margin-top: 10px; */
+                width: 100%;
+                /* margin-left: 50px; */
+                /* left: 10px; */
+               }
+               #box4>div>img{
+                width: 100%;
+                height: 300px;
+                /* cursor: pointer; */
+               }
+               span{
+                   color: darkcyan;
+               }
+               .about {
+                   margin-top: 30%;
+                   margin-left: 120px;
+                   /* background-color: rgb(230, 229, 225); */
+               }
+               .about>p{
+                   font-size: 15px;
+                   text-align: left;
+                   width: 80%;
+               }
+               .footer{
+                   display: flex;
+                   margin-top: 5%;
+                   /* background-color: rgb(230, 220, 207); */
+   
+               }
+               #log{
+                width: 30%;
+                margin-top: 5%;
+                height: 40px;
+                
+                position: absolute;
+                }
+               #submit{
+                   height: 45px;
+                   width: 120px;
+                   color: rgb(255, 255, 255);
+                   background-color: black;
+                   margin-left: 31%;
+                   position: absolute;
+                   margin-top: 60px;
+   
+                } 
+                label{
+                   margin-top: 30px;
+                   margin-left: 0px;
+                }
+                .abhay{
+                   display: flex;
+                   /* background-color: rgb(220, 217, 212); */
+                }
+                .abhay2{
+                   margin-left: 40px;
+                   margin-top: 30px;
+                   font-size: 20px;
+                   /* background-color: rgb(230, 220, 207); */
+               }
+               .abhay2>p{
+                   font-size: 15px;
+                   width: 70%;
+                   margin-left: 14%;
+               }
+               .abhay2>h4{
+                   margin-left: 14%;
+                   margin-top: 3px;
+   
+               }
+               #footer1{
+                   display: flex;
+                   margin-top: 5%;
+                   margin-left: 5%;
+                   justify-content: space-between;
+               }
+               #footer1>div{
+                   padding-top: 10px;
+               }
+               #aaa{
+                   margin-top: 80px;
+                   margin-left: 10%;
+               }
+               #GOO{
+                   height: 70px;
+                   width: 100%;
+                   border: 1px solid rgb(91, 89, 89);
+                   display: flex;
+   
+               }
+               #GOO img{
+                   height: 70px;
+                   width: 20%;
+                   border: 1px solid rgb(155, 149, 149);
+                   margin-left: 10px;
+               }
+               #INP{
+                   width: 30%;
+                   position: absolute;
+                   right: 10%;
+                   height: 40px;
+                   margin-top: 15px;
+               }
+               #sub{
+                   width: 10%;
+                   height: 43px;
+                   margin-top: 15px;
+                   margin-right: 15px;
+   
+               }
+   
+               .MANU-BAR1{
+                   text-align: center;
+                   background: rgb(rgb(255, 255, 255), green, blue);
+               
+   
+               }
+                ul{
+                   display: inline-flex;
+                   list-style: none;
+                   color: rgb(3, 3, 3);
+                 
+               }
+               ul li{
+                   width: 90%;
+                   margin: 15px;
+                   padding: 15px;
+                   font-size: 12px;
+               }
+               ul li a{
+                   text-decoration: none;
+                   color: rgb(20, 23, 26);
+                   /* display: flex; */
+               }
+                .MANU-BAR1 li:hover{
+                   color: rgb(10, 132, 255);
+                   /* display: flex; */
+                   background-color: rgb(104, 121, 136);
+   
+               }
+               .SUB-MENU-2{
+                   display: none;
+                   border: 1px solid black;
+                   background-color: rgb(125, 210, 255);
+                   height: 200px;
+                   width: auto;
+                   margin-top: 100px;
+                   margin-left: 100px;
+                   margin: auto;
+                   
+   
+               }
+               .MANU-BAR1 ul li:hover .SUB-MENU-2{
+                   display: block;
+                   position: absolute;
+                   margin-top: 15px;
+                   margin-left: 20px;
+                   text-align: left;
+   
+               }
+               .MANU-BAR1 ul li:hover .SUB-MENU-2 ul li{
+   
+                   /* width: px; */
+                   padding: 10px;
+                   border-bottom: 1px dotted white ;
+                   text-align: left;
+               }
+               
+               
+   
+   
+               
+               @media all and (min-width: 451px) and (max-width: 750px){
+                   #screen{
+                   display: grid;
+             grid-template-columns: repeat(2,200px);
+             grid-template-rows: repeat(1,300px);
+               }
+                #box2{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,300px);
+                }
+                #box3{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,300px);
+                }
+                .about{
+                   text-align: center;
+                   width: 70%;
+   
+                }
+                .footer{
+                   text-align: center;
+                   width: 70%;
+                }
+                #footer1{
+                   width: 70%;
+               }
+               }
+               @media all and (min-width: 100px) and (max-width: 450px){
+               #screen{
+                   display: grid;
+             grid-template-columns: repeat(1,200px);
+             grid-template-rows: repeat(1,300px);
+               }
+                #box2{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,400px);
+                }
+                #box3{
+                    display: grid;
+                    grid-template-columns: repeat(1,200px);
+                   grid-template-rows: repeat(1,200px);
+                }
+                .about{
+                    text-align: center;
+                   width: 50%;
+                   
+                }
+                .footer{
+                   text-align: center;
+                   width: 50%;
+                }
+                #footer1{
+                   width: 50%;
+               }
+              
+   
+               }
+        .accessories{
+            display: grid;
+            width: 90%;
+            margin: auto;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+        .accessories>div{
+            width: 100%;
+        }
+        .accessories img {
+            /* width: 100%; */
+            height: 350px;
+            width: 100%;
+
+        }
+        .accessories>div>p{
+            width: 90%;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .accessories>div>img:hover{
+            cursor: pointer;
+            
+        }
+        p:hover{
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        #opt4{
+            margin-left: 80%;
+            position: absolute;
+            height: 30px;
+            width: 10%;
+            text-align: center;
+            font-size: 20px;
+            /* margin-bottom: 30px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(100, 93, 93);
+            border-radius: 6px;
+            margin-top: 35px;
+        }
+        .clot4{
+            height: 100px;
+            width: 95%;
+            /* border: 1px solid black; */
+            margin: 30px;
+        }
+        .sort4{
+            margin-left: 75%;
+            /* padding-top: 30px; */
+            position: absolute;
+            margin-top: 35px;
+            font-size: 25px;
+        }
+     .wom4{
+        margin-top: 67px;
+        position: absolute;
+        font-size: 30px;
+        /* font-family: 'Trebuchet Mfo\S', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        font-family: serif;
+
+        
+     }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar1">
+        <div><p id="paraA"> <i>this weekend only</i> </p></div>
+        <div><p id="paraB">UP TO 30% OFF SUMMER ENTERTAINING ESSENTIALS </p></div>
+        <div><p id="paraC">shop</p></div>
+        <div><p id="paraD">details</p></div>
+      </div>
+      <div id="DABBA">
+          <div><p class="rig">English($) </p></div>
+          <div><p class="rig">Sign In / Sign Up</p></div>
+      </div>
+      <div id="GOO">
+        <div>
+            <div>
+                 <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt="">
+            
+                 <img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg" alt="">
+            </div>
+        </div>
+        <input id="INP" type="text"> <button id="sub">SUBMIT</button>
+
+      </div>
+
+
+       
+      <div class="MANU-BAR1">
+      <ul>
+        <li class="active"> <a href="#">New!</a> 
+        <div class="SUB-MENU-2">
+            <ul>
+                <div style="margin: auto,margin-top 30% ;"><li><a href="#">Accessories</a></li></div>
+                <div ><li><a href="#">Beauty & Wellness</a></li></div>
+                <div><li><a href="#">Clothing</a></li></div>
+              <div><li><a href="#">Dresses</a></li></div>  
+               <div><li><a href="#">Home & Furniture</a></li></div> 
+               <div> <li><a href="#">Plus</a></li></div>
+               <div><li><a href="#">Shoes</a></li></div> 
+            </ul>
+
+        </div>
+        </li>
+         <li> <a href="dress.html">Dresses</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div>
+        
+        </li>
+          <li> <a href="product.html">clothing</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div> </li>
+          <li> <a href="shoes.html">Shoes</a> 
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+          <li><a href="accessoires.html">Accessories</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+           <li><a href="#">Gifts & candles</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+           <li><a href="#">Home & Furniture</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+             <li><a href="#">Beauty & wellness</a>
+                <div class="SUB-MENU-2">
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Beauty & Wellness</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Home & Furniture</a></li>
+                        <li><a href="#">Plus</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+        
+                </div></li>
+          <li><a href="#">Garden & outdoor</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+          <li><a href="#">Weddings</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+           <li><a href="#">Sale</a>
+            <div class="SUB-MENU-2">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="clot4">
+        <h5 class="sort4">sort :</h5>
+        <h3 class="wom4">Accessories</h3>
+    <select name="" id="opt4">
+        <option value="Feature">  Featured</option>
+        <option value="Price:High to Low">Price:High to Low</option>
+        <option value="Price :Low to High">Price :Low to High</option>
+        <option value="Newest">Newest</option>
+        <option value="Bestselling">Bestselling</option>
+    </select>
+</div>
+    <div class="accessories">
+
+    </div>
+</body>
+</html>
+<script>
+ var accessoriesData = [  
+    {
+         img:"https://images.urbndata.com/is/image/Anthropologie/69504470_000_b3?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"scott-csoke-for-anthropologie-tulip-tote",
+        price:"$120.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69504488_010_b3?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"scott-csoke-for-anthropologie-tulip-tote",
+        price:"$68.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69046092_266_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"striped-crochet-vest",
+        price:"$98.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69641124_053_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"embellished-demi-hoop-earrings",
+        price:"$118.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70041389_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"sparkly-tulle-opera-gloves",
+        price:"$28.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/65178998_065_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"stacked-birthstone-ring",
+        price:"$58.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70361597_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"chimi-05-pink-sunglasses",
+        price:"$140.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69770279_070_b4?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"vegan-mini-crossbody-bag",
+        price:"$88.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68312164_011_b4?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"crochet-fringe-poncho",
+        price:"$110.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/76087782_041_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"picnic-hair-scarf",
+        price:"$24.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/78192739_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"14k-gold-plated-hammered-cuff-bracelet",
+        price:"$48.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68999861_014_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"embellished-quilted-satchel",
+        price:"$98.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68949643_270_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"jute-boater",
+        price:"$83.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67116491_069_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"bl-nk-v-neck-caftan",
+        price:"$140.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68006378_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"cropped-crochet-shrug",
+        price:"$68.60 $98.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/65658387_014_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"long-crochet-tunic",
+        price:"$84.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68006048_014_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"woven-rattan-shoulder-bag",
+        price:"$91.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68221977_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"open-back-crochet-vest",
+        price:"$61.60",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67735944_001_b16?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"large-floral-print-scarf",
+        price:"$42.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67674770_012_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"lusana-alma-mini-bag",
+        price:"$82.60",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67735944_001_b16?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"trellis-tote-bag",
+        price:"$68.60",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67039792_041_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"small-floral-print-scarf",
+        price:"$17.50",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67039693_015_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"large-floral-print-scarf2",
+        price:"$27.96 – $39.95",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67039925_035_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"medium-silk-scarf",
+        price:"$42.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67039693_079_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"large-floral-print-scarf",
+        price:"$33.60",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67673806_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"woven-tote",
+        price:"$54.60",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68387711_009_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"one-shoulder-crochet-poncho",
+        price:"$105.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69251791_024_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"crochet-beach-wrap",
+        price:"$61.60",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/66294141_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"watermelon-rattan-tote",
+        price:"$77.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68099647_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"knit-kaftan",
+        price:"",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/64364474_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"loeffler-randall-doreen-clutch",
+        price:"",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68740471_072_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"pearly-bobby-pin-set",
+        price:"$110.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68313196_015_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"cross-back-kimono",
+        price:"$32.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68753730_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"chan-luu-pearl-necklace",
+        price:"$95.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69072858_070_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"chan-luu-pearl-necklace",
+        price:"$44.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70396015_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"tortoiseshell-blue-light-reading-glasses",
+        price:"$108.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/64764681_014_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"indescratchables-flow-sunglasses3",
+        price:"$38.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69385797_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"crystal-drop-huggie-hoop-earrings2",
+        price:"$44.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70221999_009_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"reality-x-ray-sunglasses",
+        price:"$69.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/69871606_224_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"rhinestone-headband2",
+        price:"$55.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70221999_009_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"quay-ceo-blue-light-glasses",
+        price:"$24.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67793745_072_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"beaded-half-moon-satchel",
+        price:"$69.95",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/58637448_011_c1?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"ab-ellie-roesia-pearl-fingertip-veil",
+        price:"$298.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67897900_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"embellished-ring",
+        price:"$48.00",
+    },
+      {
+        img:"https://images.urbndata.com/is/image/Anthropologie/76192244_050_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"we-dream-in-colour-hummingbird-hair-pin",
+        price:"$80.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/67306514_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        brand:"shades-of-sea-glassy-earrings",
+        price:"$38.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/70912811_007_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"dannijo-elsie-earrings",
+        price:"$170.00",
+    },
+     {
+        img:"https://images.urbndata.com/is/image/Anthropologie/68104801_070_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+        brand:"mini-stone-hand-chain",
+        price:"$44.00",
+    },
+]
+    localStorage.setItem("masai-ecom",JSON.stringify(accessoriesData))
+    //  var car = JSON.parse(localStorage.getItem("masai-cart"))
+
+
+    var accessories = document.querySelector(".accessories")
+    // var filter = document.querySelector("select")
+
+    function display(data3){
+        accessories.innerHTML=null;
+
+        data3.forEach(function(element){
+            var card = document.createElement("div")
+
+            var img = document.createElement("img")
+            img.src = element.img
+
+            var brand = document.createElement("p")
+            brand.textContent = element.brand
+
+            var price = document.createElement("h4")
+            price.textContent = element.price;
+
+            card.append(img,brand,price)
+            accessories.append(card)
+        })
+    }
+
+display(accessoriesData);
+
+filter.addEventListener("change",function(){
+    if(filter.value=="none"){
+        display(accessoriesData)
+    }
+    else{
+        var filtered=accessoriesData.filter(function(element){
+
+            return element.catagory==filter.value
+        })
+        display(filtered);
+    }
+})
+</script>

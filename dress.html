@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *{
+               margin: 0%;
+               padding: 0%;
+           }
+           #navbar1{
+               height: 50px;
+               width: 100%;
+               background-color: rgb(199, 78, 78);
+               color: aliceblue;
+               display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                font-size: 15px;
+                
+             }
+             #PARA11{
+                 margin-left: 170px;
+                 margin-top: 20px;
+             }
+             #PARA13{
+             margin-left: 150px;
+             margin-top: 20px;
+             }
+   
+            #PARA14{
+               margin-right: 270px;
+               margin-top: 20px;
+           }
+          
+           #PARA12{
+               margin-top: 20px;
+               padding-left: 60px;
+           }
+            
+            #box1{
+               height: 60px;
+               width: 100%;
+               background-color: rgb(236, 241, 246);
+               display: flex;
+               justify-content: right;
+            }
+           .righ{
+               margin-right: 20px;
+               margin-top: 20px;
+               color: rgb(119, 114, 114);
+           }
+           
+       
+       #box1{
+            height: 60px;
+            width: 100%;
+            border: 1px solid rgb(186, 181, 181);
+            border-color: darkgray;
+            display: flex;
+           
+   
+       }
+       #img1{
+           /* height: auto;
+           width: auto; */
+           padding: 20px;
+   
+           border: 1px solid rgb(167, 166, 166);
+           /* margin-left: 30px; */
+       }
+       #img2{
+           /* height: auto;
+           width: auto; */
+           padding: 20px;
+           border: 1px solid rgb(167, 166, 166);;
+       }
+      .bar{
+        height: 40px;
+        width: 25%;
+        border: 1px solid black ;
+        margin-left:400px;
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+      .srch{
+       color: rgb(121, 143, 191);
+       margin-left: 10px;
+       margin-top: 10px;
+      }
+      #search{
+   height: 18px;
+   width: 18px;
+   margin-top: -35px;
+   margin-left: 270px;
+   color: darkgray;
+   margin-right: 250px;
+   }
+   .cart{
+       margin-left: 330px;
+      font-size: 30px;
+      margin-top: -10px;
+   }
+   
+   
+               div>h3{
+                   font-size: 25px;
+                   margin-left: 40px;
+                   
+               }
+               #box2{
+                 display: grid;
+                 grid-template-columns:repeat(6,200px);
+                 grid-template-rows: repeat( 1,250px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 margin-left: 70px;
+               }
+               #box2>div{
+                margin: auto;
+                margin-top: 10px;
+                width: 100%;
+                margin-left: 50px;
+               }
+                #box2>div>img{
+                width: 100%;
+                height: 300px
+               }
+               p{
+                   font-size: 12px;
+                   /* margin-top: px; */
+                   color: rgb(80, 78, 78);
+               }
+               #box3{
+                 display: grid;
+                 grid-template-columns:repeat(6,200px);
+                 grid-template-rows: repeat( 1,250px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 margin-left: 70px;
+               }
+               #box3>div{
+                margin: auto;
+                /* margin-top: 10px; */
+                width: 100%;
+                margin-left: 50px;
+               }
+                #box3>div>img{
+                width: 100%;
+                height: 300px;
+                cursor: pointer;
+   
+                
+                }
+               p{
+                   font-size: 12px;
+                   /* margin-top: px; */
+                   color: rgb(80, 78, 78);
+               }
+               .trend{
+                   margin-top:12%;
+                   /* margin-left: 50px; */
+   
+               }
+               .more{
+                   text-align: center;
+                   margin-top: 15%;
+       
+               }
+               #box4{
+                   display: grid;
+                 grid-template-columns:repeat(3,300px);
+                 grid-template-rows: repeat( 1,100px);
+                 gap: 25px;
+                 width: 100%;
+                 margin:  auto;
+                 justify-content: center;
+                 margin-top: 50px;
+                 /* left: 10px?; */
+                 /* margin-left: 30px; */
+               }
+               #box4>div{
+                margin: auto;
+                /* margin-top: 10px; */
+                width: 100%;
+                /* margin-left: 50px; */
+                /* left: 10px; */
+               }
+               #box4>div>img{
+                width: 100%;
+                height: 300px;
+                /* cursor: pointer; */
+               }
+               span{
+                   color: darkcyan;
+               }
+               .about {
+                   margin-top: 30%;
+                   margin-left: 120px;
+                   /* background-color: rgb(230, 229, 225); */
+               }
+               .about>p{
+                   font-size: 15px;
+                   text-align: left;
+                   width: 80%;
+               }
+               .footer{
+                   display: flex;
+                   margin-top: 5%;
+                   /* background-color: rgb(230, 220, 207); */
+   
+               }
+               #log{
+                width: 30%;
+                margin-top: 5%;
+                height: 40px;
+                
+                position: absolute;
+                }
+               #submit{
+                   height: 45px;
+                   width: 120px;
+                   color: rgb(255, 255, 255);
+                   background-color: black;
+                   margin-left: 31%;
+                   position: absolute;
+                   margin-top: 60px;
+   
+                } 
+                label{
+                   margin-top: 30px;
+                   margin-left: 0px;
+                }
+                .abhay{
+                   display: flex;
+                   /* background-color: rgb(220, 217, 212); */
+                }
+                .abhay2{
+                   margin-left: 40px;
+                   margin-top: 30px;
+                   font-size: 20px;
+                   /* background-color: rgb(230, 220, 207); */
+               }
+               .abhay2>p{
+                   font-size: 15px;
+                   width: 70%;
+                   margin-left: 14%;
+               }
+               .abhay2>h4{
+                   margin-left: 14%;
+                   margin-top: 3px;
+   
+               }
+               #footer1{
+                   display: flex;
+                   margin-top: 5%;
+                   margin-left: 5%;
+                   justify-content: space-between;
+               }
+               #footer1>div{
+                   padding-top: 10px;
+               }
+               #aaa{
+                   margin-top: 80px;
+                   margin-left: 10%;
+               }
+               #GO1{
+                   height: 70px;
+                   width: 100%;
+                   border: 1px solid rgb(91, 89, 89);
+                   display: flex;
+   
+               }
+               #GO1 img{
+                   height: 70px;
+                   width: 20%;
+                   border: 1px solid rgb(155, 149, 149);
+                   margin-left: 10px;
+               }
+               #INPUT2{
+                   width: 30%;
+                   position: absolute;
+                   right: 10%;
+                   height: 40px;
+                   margin-top: 15px;
+               }
+               #sub{
+                   width: 10%;
+                   height: 43px;
+                   margin-top: 15px;
+                   margin-right: 15px;
+   
+               }
+   
+               .MENU-BAR3{
+                   text-align: center;
+                   background: rgb(rgb(255, 255, 255), green, blue);
+               
+   
+               }
+                ul{
+                   display: inline-flex;
+                   list-style: none;
+                   color: rgb(3, 3, 3);
+                 
+               }
+               ul li{
+                   width: 90%;
+                   margin: 15px;
+                   padding: 15px;
+                   font-size: 12px;
+               }
+               ul li a{
+                   text-decoration: none;
+                   color: rgb(20, 23, 26);
+                   /* display: flex; */
+               }
+                .MENU-BAR3 li:hover{
+                   color: rgb(10, 132, 255);
+                   /* display: flex; */
+                   background-color: rgb(104, 121, 136);
+   
+               }
+               .SUB-MENU-3{
+                   display: none;
+                   border: 1px solid black;
+                   background-color: rgb(125, 210, 255);
+                   height: 200px;
+                   width: auto;
+                   margin-top: 100px;
+                   margin-left: 100px;
+                   margin: auto;
+                   
+   
+               }
+               .MENU-BAR3 ul li:hover .SUB-MENU-3{
+                   display: block;
+                   position: absolute;
+                   margin-top: 15px;
+                   margin-left: 20px;
+                   text-align: left;
+   
+               }
+               .MENU-BAR3 ul li:hover .SUB-MENU-3 ul li{
+   
+                   /* width: px; */
+                   padding: 10px;
+                   border-bottom: 1px dotted white ;
+                   text-align: left;
+               }
+               
+               
+   
+   
+               
+               @media all and (min-width: 451px) and (max-width: 750px){
+                   #screen{
+                   display: grid;
+             grid-template-columns: repeat(2,200px);
+             grid-template-rows: repeat(1,300px);
+               }
+                #box2{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,300px);
+                }
+                #box3{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,300px);
+                }
+                .about{
+                   text-align: center;
+                   width: 70%;
+   
+                }
+                .footer{
+                   text-align: center;
+                   width: 70%;
+                }
+                #footer1{
+                   width: 70%;
+               }
+               }
+               @media all and (min-width: 100px) and (max-width: 450px){
+               #screen{
+                   display: grid;
+             grid-template-columns: repeat(1,200px);
+             grid-template-rows: repeat(1,300px);
+               }
+                #box2{
+                   display: grid;
+                   grid-template-columns: repeat(2,200px);
+                   grid-template-rows: repeat(1,400px);
+                }
+                #box3{
+                    display: grid;
+                    grid-template-columns: repeat(1,200px);
+                   grid-template-rows: repeat(1,200px);
+                }
+                .about{
+                    text-align: center;
+                   width: 50%;
+                   
+                }
+                .footer{
+                   text-align: center;
+                   width: 50%;
+                }
+                #footer1{
+                   width: 50%;
+               }
+              
+   
+               }
+               .dresses{
+            display: grid;
+            width: 90%;
+            margin: auto;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 20%;
+        }
+        .dresses>div{
+            width: 100%;
+        }
+        .dresses img {
+            /* width: 100%; */
+            height: 350px;
+            width: 100%;
+
+        }
+        .dresses>div>p{
+            width: 90%;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .dresses>div>img:hover{
+            cursor: pointer;
+            
+        }
+        p:hover{
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+        #opt1{
+            margin-left: 80%;
+            position: absolute;
+            height: 30px;
+            width: 10%;
+            text-align: center;
+            font-size: 20px;
+            /* margin-bottom: 30px; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(100, 93, 93);
+            border-radius: 6px;
+            margin-top: 105px;
+        }
+        .clot1{
+            height: 100px;
+            width: 95%;
+            /* border: 1px solid black; */
+            margin: 30px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .sort1{
+            margin-left: 75%;
+            /* padding-top: 30px; */
+            position: absolute;
+            margin-top: 105px;
+            font-size: 25px;
+        }
+     .wom1{
+        margin-top: 105px;
+        position: absolute;
+        font-size: 30px;
+        /* font-family: 'Trebuchet Mfo\S', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        font-family: serif;
+        margin-left: 50px;
+
+        
+     }
+     .header1{
+      display: flex;
+      position: absolute;
+    /* padding: 20px; */
+    /* margin: auto; */
+    /* text-align: center; */
+
+     }
+     .header1>h4{
+      height: 40px;
+      width: 110px;
+      border: 1px solid black;
+      margin: auto;
+      margin-left: 60px;
+      padding-top: 10px;
+      /* text-align: bottom; */
+
+
+     }
+
+        
+    </style>
+</head>
+<body>
+  <div id="navbar1">
+    <div><p id="PARA11"> <i>this weekend only</i> </p></div>
+    <div><p id="PARA12">UP TO 30% OFF SUMMER ENTERTAINING ESSENTIALS </p></div>
+    <div><p id="PARA13">shop</p></div>
+    <div><p id="PARA14">details</p></div>
+  </div>
+  <div id="box1">
+      <div><p class="righ">English($) </p></div>
+      <div><p class="righ">Sign In / Sign Up</p></div>
+  </div>
+  <div id="GO1">
+    <div>
+        <div>
+             <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt="">
+        
+             <img src="https://images.ctfassets.net/5de70he6op10/y1O9tEDOvCGliGUvT9RoJ/eb8ab4734c5e3778b8b61da70ed441ac/AL_NewLogo_2.svg" alt="">
+        </div>
+    </div>
+    <input id="INPUT2" type="text"> <button id="sub">SUBMIT</button>
+
+  </div>
+
+
+   
+  <div class="MENU-BAR3">
+  <ul>
+    <li class="active"> <a href="#">New!</a> 
+    <div class="SUB-MENU-3">
+        <ul>
+            <div style="margin: auto,margin-top 30% ;"><li><a href="#">Accessories</a></li></div>
+            <div ><li><a href="#">Beauty & Wellness</a></li></div>
+            <div><li><a href="#">Clothing</a></li></div>
+          <div><li><a href="#">Dresses</a></li></div>  
+           <div><li><a href="#">Home & Furniture</a></li></div> 
+           <div> <li><a href="#">Plus</a></li></div>
+           <div><li><a href="#">Shoes</a></li></div> 
+        </ul>
+
+    </div>
+    </li>
+     <li> <a href="dress.html">Dresses</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div>
+    
+    </li>
+      <li> <a href="product.html">clothing</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div> </li>
+      <li> <a href="shoes.html">Shoes</a> 
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+      <li><a href="accessoires.html">Accessories</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+       <li><a href="#">Gifts & candles</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+       <li><a href="#">Home & Furniture</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+         <li><a href="#">Beauty & wellness</a>
+            <div class="SUB-MENU-3">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Beauty & Wellness</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Home & Furniture</a></li>
+                    <li><a href="#">Plus</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+    
+            </div></li>
+      <li><a href="#">Garden & outdoor</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+      <li><a href="#">Weddings</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div></li>
+       <li><a href="#">Sale</a>
+        <div class="SUB-MENU-3">
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Beauty & Wellness</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Home & Furniture</a></li>
+                <li><a href="#">Plus</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+
+        </div>
+    </li>
+
+  </ul>
+
+</div>
+  <div class="clot1">
+    <div class="header1">
+      <h4 style="background-color:rgb(184, 164, 128) ;color: aliceblue;" > CASUAL</h4>
+      <h4 style="background-color:rgb(244, 147, 147) ;color: aliceblue">PARTY</h4>
+      <h4 style="background-color:rgb(231, 185, 138) ;color: aliceblue">WHITE</h4>
+      <h4 style="background-color:rgb(210, 171, 101) ;color: aliceblue">WEDDING</h4>
+      <h4 style="background-color:rgb(141, 92, 103) ;color: aliceblue">BLACK</h4>
+      <h4 style="background-color:rgb(162, 95, 92) ;color: aliceblue">FORMAL</h4>
+    </div>
+    <h5 class="sort1">sort :</h5>
+    <h3 class="wom1">Dresses</h3>
+    <select name="" id="opt1">
+        <option value="Feature">  Featured</option>
+        <option value="Price:High to Low">Price:High to Low</option>
+        <option value="Price :Low to High">Price :Low to High</option>
+        <option value="Newest">Newest</option>
+        <option value="Bestselling">Bestselling</option>
+    </select>
+    
+
+    <div class="dresses">
+<a href="ca"></a>
+    </div>
+</body>
+</html>
+<script>
+
+var dressData = [
+    {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130347470050_059_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Geisha Designs Asymmetrical Hem Midi Dress",
+    price:"$210.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060077_070_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologies Pleated Halter Midi Dress",
+    price:"$198.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130464030190_060_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Hutch Ruched Fringe Mini Dress",
+    price:"$220.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130205120017_000_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Carolina K Printed Halter Midi Dress ",
+    price:"$120.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060073_040_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Halter-side-slit-maxi-dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130636080006_050_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Misha-collection-halter-mini-dress",
+    price:"$321.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060074_079_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By-Anthropologie Twist-Front-Midi-dress",
+    price:"$270.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130652010001_070_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Sweetheart midi dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060076_095_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Elyse-bias-slip-midi-dress",
+    price:"$120.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130647160137_069_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologie halter Midi dress",
+    price:"$248.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060072_030_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologie tiered Maxi dress",
+    price:"$180.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130348690171_011_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The Somerset maxi dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570018_009_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologie printed midi dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130551300175_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Misa diana floral chiffon maxi dress",
+    price:"$460.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130340890025_095_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Vineet bahl colorblock maxi dress",
+    price:"$298.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130097530228_079_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Black halo one shoulder mini dress",
+    price:"$375.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060078_010_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Shoshanna strapless floral print midi dress",
+    price:"$560.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130340890024_069_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Maeve v-neck-mini-dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130348690173_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Vineet bahl Tiered Ruffle maxi dress",
+    price:"$260.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130916210042_040_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologie off the shoulder linen-mini dress",
+    price:"$170.00",
+    },
+    {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130331400015_010_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The marais printed chiffon maxi dress",
+    price:"$180.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Not so serious by pallavi mohan deep v mini dress",
+    price:"$248.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress",
+    price:"$168.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_011_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress",
+    price:"$168.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_020_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress ",
+    price:"$168.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_068_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress",
+    price:"$168.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130728470001_085_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"he somerset maxi dress",
+    price:"$168.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060072_046_c?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Devotion twins embroidered ella tunic dress",
+    price:"$239.00 - $340.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130370060072_063_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress ",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130647160128_049_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"he somerset maxi dress",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130638280170_011_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The sleeveless somerset mini dress poplin edition",
+    price:"$140.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570013_030_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Farm rio halter maxi dress",
+    price:"$230.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570013_072_c?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress : linen edition",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570013_010_c?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress : linen edition",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130647160057_009_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset maxi dress : linen edition",
+    price:"$170.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130084320085_040_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Robin tiered mini dress",
+    price:"$138.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570014_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By anthropologie deep v neck vibrant mini dress",
+    price:"$148.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130652010001_095_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset mini dress linen edition",
+    price:"$148.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130646420031_069_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"v-neck plunge tunic mini dress",
+    price:"$148.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130089450012_049_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Elyse bias slip midi dress",
+    price:"$120.00",
+    },
+     {
+    img:"https://images.urbndata.com/is/image/Anthropologie/68889245_011_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"The somerset mini dress",
+    price:"$140.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/68889245_001_b2?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Pilcro puff sleeve tunic",
+    price:"$148.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130916210078_082_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"By Anthropologie gauzy cutout cover up maxi dress",
+    price:"$89.60",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/67864108_001_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Emily-halter-mini-dress",
+    price:"$140.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130344600154_066_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Daily practice by Anthropologie solid maxi dress",
+    price:"$98.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130880890065_060_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Forever that girl sheer flowy mini dress",
+    price:"$160.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130084320084_266_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Farm x Anthropologie halter Maxi dress",
+    price:"$230.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130607630008_010_b15?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Maeve linen tie back Maxi dress",
+    price:"$180.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130578570012_010_c14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Maeve strapless lace mini dress",
+    price:"$190.00",
+    },
+      {
+    img:"https://images.urbndata.com/is/image/Anthropologie/4130608700009_011_b?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698",
+    brand:"Smocked waist mini dress",
+    price:"$190.00",
+    },
+      { 
+    img: "https://images.urbndata.com/is/image/Anthropologie/4130344600149_010_b14?$an-category$&fit=constrain&fmt=webp&hei=1046&qlt=80&wid=698" ,
+    brand:"Strapless-maxi-dress",
+    price:"$160.00",
+    },
+    
+
+]
+localStorage.setItem("masai-ecom",JSON.stringify(dressData))
+
+
+var dresses = document.querySelector(".dresses")
+// var filter = document.querySelector("select")
+
+function display(data1){
+    dresses.innerHTML=null;
+
+    data1.forEach(function(element){
+        var card = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.src = element.img
+
+        var brand = document.createElement("p")
+        brand.textContent = element.brand
+
+        var price = document.createElement("h4")
+        price.textContent = element.price;
+
+        card.append(img,brand,price)
+        dresses.append(card)
+    })
+}
+
+display(dressData);
+
+filter.addEventListener("change",function(){
+if(filter.value=="none "){
+    display(dressData)
+}
+else{
+    var filtered=dressData.filter(function(element){
+
+        return element.opt1  ==filter.value
+    })
+    display(filtered);
+}
+})
+</script>
